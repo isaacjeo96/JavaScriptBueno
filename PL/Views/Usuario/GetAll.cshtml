@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Usuario:</h2>
+            <hr />
+        </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/Usuario/UsuarioCRUD.js"></script>
+
+    <div class="row">
+        <div class="col-md-10">
+
+        </div>
+        <div class="col-md-1" style="padding-left:100px">
+            <button type="button" class=" btn btn-success" id="btnGuardar" onclick="GetAll()">Agergar</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table id="tblUsuario" class="table table-hover" border="1">
+                <thead>
+                    <tr>
+                        <th class="text-center" scope="col">Genero</th>
+                        <th class="text-center" scope="col">Nombre</th>
+                        <th class="text-center" scope="col">Dirección</th>
+                        <th class="text-center" scope="col">Correo</th>
+                        <th class="text-center" scope="col">Foto</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
